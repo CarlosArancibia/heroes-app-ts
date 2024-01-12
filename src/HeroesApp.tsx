@@ -1,5 +1,7 @@
-import React from 'react';
-
 export const HeroesApp = () => {
-  return <div>HeroesApp</div>;
+  return (
+    <>
+      <h1 className="text-3xl font-bold">HeroesApp</h1>
+    </>
+  );
 };
