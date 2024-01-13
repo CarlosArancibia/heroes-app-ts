@@ -4,7 +4,7 @@ import { getHeroesByName } from '../components/getHeroesByName';
 import { HeroCard } from '../components/HeroCard';
 
 export const SearchPage = () => {
-  const { pathname, search } = useLocation();
+  const { search } = useLocation();
   const q = search.replace('?q=', '');
   const heroes = getHeroesByName(q);
 
