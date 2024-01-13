@@ -10,7 +10,7 @@ interface Props {
 
 export const HeroCard = ({ id, superhero, alter_ego, first_appearance }: Props) => {
   return (
-    <article className="border flex h-48 rounded-md">
+    <article className="border flex h-48 rounded-md overflow-hidden">
       <img className="w-auto h-full" src={`./src/assets/heroes/${id}.jpg`} alt={superhero} />
       <div className="flex flex-col justify-between p-4">
         <h3 className="font-semibold text-xl">{superhero}</h3>
