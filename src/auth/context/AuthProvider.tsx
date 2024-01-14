@@ -8,8 +8,11 @@ interface Props {
 }
 
 const init = () => {
-  const user = localStorage.getItem('user') ?? '{}';
-  return JSON.parse(user);
+  const user = JSON.parse(localStorage.getItem('user') ?? '{}');
+  return {
+    logged: !!user.name,
+    user,
+  };
 };
 
 export const AuthProvider = ({ children }: Props) => {
